@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: #1f1f1f;
+	color: white;
+}
+
+.navbar {
+    background-color: grey;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px; /* Adjust spacing between navbar items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff; /* Text color for navbar items */
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.hero-section {
+    background-image: url('./resources/samarkand.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 20px;
+    background-color: white;
+    color: white;
+    font-size: 30px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    height: 100;
+}
