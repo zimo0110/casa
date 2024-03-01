@@ -1,12 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     padding: 20px;
-    background-color: #1f1f1f;
+    background-color: #ffffff;
 	color: white;
 }
 
 .navbar {
-    background-color: grey;
+    background-color: lightblue;
     padding: 10px;
 }
 
@@ -19,11 +19,12 @@ body {
 
 .navbar li {
     margin-right: 20px; /* Adjust spacing between navbar items */
+    color: darkblue;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #fff; /* Text color for navbar items */
+    color: blue; /* Text color for navbar items */
     font-weight: 700;
     font-size: 18px;
 }
@@ -42,13 +43,145 @@ body {
     font-size: 30px;
 }
 
+.section {
+    height: 500px;
+}
+
 .about-section {
+    background-color: white; /* White background color for sections */
+    padding: 50px;
+    text-align: center;
+    margin: 20px 0;
+    color: darkblue;
+}
+
+.team-section {
+    background-color: white; /* White background color for sections */
+    padding: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.events-section {
+    background-color: white; /* White background color for sections */
+    padding: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-section {
+    background-color: white; /* White background color for sections */
+    padding: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-section {
+    background-color: white; /* White background color for sections */
+    padding: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-section {
+    border-top: 1px solid #ddd; /* Border between sections */
+    background-color: lightblue;
+}
+
+h2 {
+    color: #2c3e50; /* Dark blue heading color */
+}
+
+.team-cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-card {
+    width: 250px;
+    background-color: white;
     padding: 20px;
-    background-color: blue;
-    color: white;
-    font-size: 30px;
-    height: 100;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: darkblue;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.events-cards ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    width : 100%;
+}
+
+.event-cards {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.event-card {
+background-color: white;
+padding: 20px;
+margin: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+color: darkblue;
+}
+
+.event-image img {
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+}
+
+.event-card:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+width: 100%; /* Make the image fill the width of the card */
+height: auto; /* Maintain aspect ratio */
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.event-date {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.event-details h3 {
+margin-top: 0;
+}
+
+.contact-icon {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the icons circular */
 }
