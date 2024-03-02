@@ -8,6 +8,13 @@ body {
 .navbar {
     background-color: lightblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; /* Adjust the width of your logo */
 }
 
 .navbar ul {
@@ -20,6 +27,8 @@ body {
 .navbar li {
     margin-right: 20px; /* Adjust spacing between navbar items */
     color: darkblue;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .navbar a {
@@ -29,8 +38,14 @@ body {
     font-size: 18px;
 }
 
+/* Add this style to remove default link styling */
+.navbar a, .navbar a:visited, .navbar a:hover, .navbar a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
 .hero-section {
-    background-image: url('./resources/samarkand.jpeg');
+    background-image: url('./resources/hero1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -39,8 +54,14 @@ body {
     height: 50vh;
     padding: 20px;
     background-color: white;
-    color: white;
+    color: darkblue;
     font-size: 30px;
+    text-shadow: white;
+}
+
+.hero-section h1 {
+    background-color: white;
+    padding: 10px;
 }
 
 .section {
@@ -56,7 +77,7 @@ body {
 }
 
 .team-section {
-    background-color: white; /* White background color for sections */
+    background-color: black; /* White background color for sections */
     padding: 50px;
     text-align: center;
     margin: 20px 0;
@@ -111,7 +132,7 @@ h2 {
 
 .team-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(10, 10, 240, 0.4);
 }
 
 .team-card img {
